@@ -1,9 +1,4 @@
-variable "region" {
-  default = "ap-south-1"
-}
-variable "instance_type" {
-  default = "t2.micro"
-}
-variable "ami_id" {
-  default = "ami-0f5ee92e2d63afc18"
+variable "key_name" {
+  description = "Name of an existing AWS key pair to allow SSH access"
+  default     = "terraformhachi"  # Change this to match your actual key name
 }
